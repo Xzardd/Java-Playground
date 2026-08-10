@@ -1,4 +1,4 @@
-# ☕ Java Playground
+Java Playground
 
 Welcome to my Java learning repository.
 
