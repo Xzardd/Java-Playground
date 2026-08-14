@@ -1,24 +1,23 @@
-class Student {
-    String name;
-    int age;
+class Car {
+    String brand;
+    int speed;
 
-    Student(String name, int age) {
-        this.name = name;
-        this.age = age;
+    Car(String brand, int speed) {
+        this.brand = brand;
+        this.speed = speed;
     }
 
-    void display() {
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
+    void show() {
+        System.out.println(brand + " runs at " + speed + " km/h");
     }
 }
 
 public class Object {
     public static void main(String[] args) {
-        Student s1 = new Student("Rahul", 20);
-        Student s2 = new Student("Aman", 21);
+        Car c1 = new Car("BMW", 200);
+        Car c2 = new Car("Audi", 180);
 
-        s1.display();
-        s2.display();
+        c1.show();
+        c2.show();
     }
 }
