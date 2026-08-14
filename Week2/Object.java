@@ -1,23 +1,21 @@
 class Car {
+    String color;
     String brand;
-    int speed;
 
-    Car(String brand, int speed) {
+    public Car(String brand, String color) {
         this.brand = brand;
-        this.speed = speed;
+        this.color = color;
     }
 
-    void show() {
-        System.out.println(brand + " runs at " + speed + " km/h");
+    public void drive() {
+        System.out.println("The " + color + " " + brand + " is now driving.");
     }
 }
 
-public class Object {
+public class Main {
     public static void main(String[] args) {
-        Car c1 = new Car("BMW", 200);
-        Car c2 = new Car("Audi", 180);
+        Car myCar = new Car("Toyota", "Red");
 
-        c1.show();
-        c2.show();
+        myCar.drive(); 
     }
 }
