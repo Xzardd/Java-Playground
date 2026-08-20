@@ -1,28 +1,51 @@
 public class operators {
+    public static void main(String[] args) {
 
-public static void main(String[] args) {
+        int a = 5;
+        int b = 5;
+        int postResult = a++ * 2;
+        int preResult = ++b * 2;
 
-int a = 9;
-int b = 8;
+        System.out.println("postResult: " + postResult + ", a: " + a);
+        System.out.println("preResult: " + preResult + ", b: " + b);
 
-boolean result = a>=b;
+       
 
-System.out.println(result);
+        int number = 8;
+        int leftShift = number << 2;
+        int rightShift = number >> 1;
 
+        System.out.println("leftShift: " + leftShift);
+        System.out.println("rightShift: " + rightShift);
 
-int x = 87;
-int y = 32;
-int u = 21;
-int v = 43;
+        int READ = 1;
+        int WRITE = 2;
+        int permissions = READ | WRITE;
+        boolean canWrite = (permissions & WRITE) != 0;
 
-boolean answer = x >= y && u > v && x>v ;
+        System.out.println("canWrite: " + canWrite);
 
-System.out.println(answer);
+        int x = 10;
+        int y = 25;
+        x ^= y;
+        y ^= x;
+        x ^= y;
 
+        System.out.println("x: " + x + ", y: " + y);
 
+        int score = 85;
+        char grade = (score >= 90) ? 'A' : (score >= 80) ? 'B' : (score >= 70) ? 'C' : 'F';
 
-}
+        System.out.println("grade: " + grade);
 
+        byte byteVal = 100;
+        byteVal += 5;
 
+        System.out.println("byteVal: " + byteVal);
 
+        Object obj = "Hello Java";
+        if (obj instanceof String s && s.length() > 5) {
+            System.out.println("upper: " + s.toUpperCase());
+        }
+    }
 }
