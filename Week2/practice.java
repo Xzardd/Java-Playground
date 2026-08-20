@@ -1,30 +1,43 @@
 public class practice {
     public static void main(String[] args) {
+     
+   int n = 20;
 
+     for(int num = 2; num<=n;num++ ){
 
-int mark = 69;
+        boolean isprime = true;
 
-if (mark < 30) {
+        for(int a = 2; a<num; a++){
 
-    System.out.println("Fail");
+            if (num % a == 0 ) {
+                isprime = false;
+                break;
+                
+            }
+
+        }
+
+        if (isprime) {
+            System.out.println(num);
+        }
+
+     }
+
+   }
+ 
     
-} else if(mark < 50) {
-    System.out.println("C");
 
-    
 }
 
-else if (mark < 70) {
-    System.out.println("A");
     
-}
+        
 
-    
+
 
         
-    }
+    
 
 
-}
+
     
 
