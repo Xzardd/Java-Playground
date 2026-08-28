@@ -12,6 +12,13 @@ public class Type1 {
     // static int m = 31;
     // static int n = 35;
 
+    //static int year = 1900;
+
+    //static double tempC = 37; 
+
+    // static int s1 = 32;
+    // static int s2 = 64;
+
     public static void main(String[] args) {
     
         //Basic calculator
@@ -34,6 +41,8 @@ public class Type1 {
     //     System.out.println("Invalid Opeartor");
     // }
         
+
+
  
     //Positive Negative and zero
 
@@ -49,6 +58,8 @@ public class Type1 {
     // }
 
 
+
+
     //Largest of two/three Numbers
 
 // if (l>=m && l>=n) {
@@ -61,6 +72,52 @@ public class Type1 {
 
 //     System.out.println("N is Greater");
 // }
+
+//Leap Year Verification
+
+// if (year%400==0 || (year%4==0 && year%100 != 0)) {
+//     System.out.println("It's leap year");
+    
+// }
+// else{
+//     System.out.println("Not A Leap Year");
+// }
+    
+//Celcius to Farenheit
+
+// double tempF = (tempC * 9/5) + 32;
+
+// System.out.println(tempF);
+
+
+
+
+
+//Simple Interest
+
+// Si = (P * R * T) /100  (Simple answer)
+//sysout "Si"
+
+
+//Swap Two Numbers
+
+// System.out.println("Before Swap");
+// System.out.println(s1);
+// System.out.println(s2);
+
+// int temp = s1;
+//  s1 = s2;
+//  s2 = temp;
+
+//  System.out.println("After Swap");
+//  System.out.println(s1);
+//  System.out.println(s2);
+
+
+
+
+
+
 
 
 
