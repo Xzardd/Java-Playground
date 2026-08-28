@@ -19,6 +19,8 @@ public class Type1 {
     // static int s1 = 32;
     // static int s2 = 64;
 
+    //static char grade = 'C';
+
     public static void main(String[] args) {
     
         //Basic calculator
@@ -112,6 +114,28 @@ public class Type1 {
 //  System.out.println("After Swap");
 //  System.out.println(s1);
 //  System.out.println(s2);
+
+
+
+//Grade Calculator Using switch
+
+// switch (grade) {
+//     case 'A':
+//         System.out.println("Excellent");
+//         break;
+
+//     case 'B':
+//         System.out.println("Good");    
+//         break;
+//     case 'C':
+//     System.out.println("Average");
+
+//     default:
+//         System.out.println("Invalid Grade");
+//         break;
+// }
+
+
 
 
 
