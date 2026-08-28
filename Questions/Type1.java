@@ -8,6 +8,10 @@ public class Type1 {
 
     //static int x =  -32;
 
+    // static int l = 32;
+    // static int m = 31;
+    // static int n = 35;
+
     public static void main(String[] args) {
     
         //Basic calculator
@@ -45,8 +49,22 @@ public class Type1 {
     // }
 
 
-    //Largest of three Numbers
+    //Largest of two/three Numbers
+
+// if (l>=m && l>=n) {
+//     System.out.println("L is Greater");
     
+// } else if (m>=l && m>=n) {
+//     System.out.println("M is Greater");
+    
+// } else {
+
+//     System.out.println("N is Greater");
+// }
+
+
+
+
 
     }
 
