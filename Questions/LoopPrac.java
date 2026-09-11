@@ -19,6 +19,11 @@ public class LoopPrac {
     // int pam = 123;
     // int rev = 0;
     // int original = pam;
+    // int sod = 2345;
+    // int sodsum = 0;
+    // int p = 17;
+    // boolean isPrime = true;
+    // int pp = 20;
     
 
     //Basic Loops Statement
@@ -77,7 +82,63 @@ public class LoopPrac {
     // else{
     //     System.out.println("Not A Palindrome");
     // }
+
+
+
+    //Sum of Digits    
+    // while (sod != 0) {
+
+    //     int digi = sod % 10;
+    //     sodsum = sodsum + digi;
+    //     sod = sod / 10;
         
+    // }
+    // System.out.println("Sum of digits = " + sodsum);
+
+
+    //Prime Numbers
+
+    // if(n<=1){
+    // isPrime = false;
+    // }
+    // for(int i = 2; i<p; i++){
+
+    //     if (p % i == 0) {
+    //         isPrime = false;
+    //         break;
+            
+    //     }
+
+    // }
+    // if (isPrime) {
+    //     System.out.println("Prime");
+    // }
+    // else{
+    //     System.out.println("Not Prime");
+    // }
+
+    //Printing Prime from 1 to N
+   
+    // for(int pnum = 2; pnum <= pp; pnum++){
+    //     boolean isPrime = true;
+
+ 
+    //     for(int i = 2; i < pnum; i++){
+
+    //         if (pnum % i == 0) {
+    //             isPrime = false;
+    //             break;
+                
+    //         }
+    //     }
+
+    //     if (isPrime) {
+    //         System.out.println(pnum);
+    //     }
+
+    //}
+
+
 
 
 
