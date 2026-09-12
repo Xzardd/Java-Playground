@@ -3,6 +3,10 @@
 public class Arrays {
     public static void main(String[] args) {
 
+        // String firstname = "Hyper";
+        // String lastname = "Car";
+        // String fullanme = firstname + " " + lastname;
+
     //Basic Syntax
     //     int[] arr = new int[]{10, 20, 30, 40, 50};
 
@@ -26,14 +30,17 @@ public class Arrays {
     // marks[2][1] = 2;
     // marks[2][2] = 1;
 
-    // for(int row = 0; row<3; row++){
-    //     for(int col = 0; col<3;col++){
+    // for(int row = 0; row<marks.length; row++){
+    //     for(int col = 0; col<marks[row].length;col++){
     //     System.out.print(marks[row][col]);
 
     //     }
     //     System.out.println();        
     // }
 
+    //Basic String Concatenation
+    // System.out.println(firstname + lastname);
+    // System.out.println(fullanme);
 
         
     }
