@@ -25,6 +25,8 @@ static int multiply(int a, int b){
     return (a * b);
 }
 
+//Functon Overloading (same name diff parameter)
+
 static int sum(int a, int b){
     return (a+b);
 
@@ -35,15 +37,29 @@ static int sum(int a, int b, int c){
 }
 
 static void meet(String name, int age){
-    System.out.println("hello "+name + "your age is " +age);
+    System.out.println("hello "+name + " your age is " +age);
 }
 
 static void meet(int age, String name) {
-    System.out.println("Your age is "+age+ "Your are " + name);
+    System.out.println("Your age is "+age+ " Your are " + name);
 }
 
-//Functon Overloading (sam name diff parameter)
+//Chaining of Functions
 
+static void fun1(){
+    fun2();
+    System.out.println("hi");
+}
+
+static void fun2(){
+        fun3();
+
+    System.out.println("hello");
+}
+
+static void fun3(){
+    System.out.println("This should be first");
+}
 
     public static void main(String[] args) {
 
@@ -59,6 +75,7 @@ static void meet(int age, String name) {
        
         System.out.println(multiply(3, 6));
 
+        //Overloading Part
         int z = sum(2, 4);
         System.out.println(z);
 
@@ -68,6 +85,11 @@ static void meet(int age, String name) {
         meet("Farhan", 23);
 
         meet(23, "Farhan");
+
+        //Chaining of functions
+
+        fun1();
+        System.out.println("bye");
        
     }
     
