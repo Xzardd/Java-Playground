@@ -14,7 +14,7 @@ public class Arrays {
     //         System.out.println(arr[i]);
 
     //     }
-       //Printing Length Also
+    //Printing Length Also
     //     System.out.println(arr.length);
 
     //2d Array
