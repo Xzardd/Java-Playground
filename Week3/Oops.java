@@ -1,48 +1,41 @@
 package Week3;
 
-public class Oops { 
+public class Oops {
+    
     public static void main(String[] args) {
 
-        Student s1 = new Student();
-        Student s2 = new Student();
+        Student s1 = new Student("Farhan",23,102,"Patna");
 
-        s1.name = "Farhan";
-        s1.age = 23;
-        s1.rollNum = 19;
-        s1.city = "Patna";
-
-        s2.name = "Rehan";
-        s2.age = 20;
-        s2.rollNum = 20;
-        s2.city = "Same Patna";
-
+      
         s1.markAttendance();
         s1.print();
-
-        s2.markAttendance();
-        s2.print();
-
-        
-
-
         
     }
-    
 }
 
-class Student{
+class Student {
+
 String name;
 int age;
-int rollNum;
+int rolNum;
 String city;
 
+Student(String name, int age, int rolNum, String city){
+
+    this.name = name;
+    this.age = age;
+    this.rolNum = rolNum;
+    this.city = city;
+
+}
+
 void markAttendance(){
-    System.out.println("Attendance marked by : " +name);
+    System.out.println("This attendance is marked by " +name);
 
 }
 
 void print(){
-    System.out.println(name+ " " + age + " " +rollNum+ " " + city );
+    System.out.println(name + " " + age + " " + rolNum + " " + city);
 
 }
 
