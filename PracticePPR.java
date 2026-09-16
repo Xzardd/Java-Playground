@@ -54,7 +54,50 @@ public class PracticePPR {
         // System.out.println(a);
         // System.out.println(b);
 
+        //Ques 9
+
+        // int mulT = 5;
+
+        // for(int k = 1; k<=10; k++){
+        //     System.out.println( mulT + " x " + k + " = " + (mulT * k));
+        // }
+
+        //Ques 10
+
+    //     int f = 8;
+    //     int factorial = 1;
+
+    //     for(int k = 1; k <=f; k++){
+    //         factorial = factorial * k;
         
+    //     }
+    //    System.out.println(factorial); 
+
+    //Ques 11
+
+    // int d = 4321;
+    // int count = 0;
+
+
+    // while(d%10 != 0){
+    //     d = d / 10;
+    //     count++;
+    // }
+
+    // System.out.println(count);
+
+    //Ques 12
+
+    int e = 87654;
+    int reverse = 0;
+
+    while( e !=0) {
+        int dig = e % 10;
+        reverse = reverse * 10 + dig;
+        e = e / 10;
+    }
+    System.out.println(reverse);
+
 
 
 
