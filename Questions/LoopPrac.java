@@ -121,7 +121,6 @@ public class LoopPrac {
    
     // for(int pnum = 2; pnum <= pp; pnum++){
     //     boolean isPrime = true;
-
  
     //     for(int i = 2; i < pnum; i++){
 

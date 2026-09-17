@@ -88,15 +88,111 @@ public class PracticePPR {
 
     //Ques 12
 
-    int e = 87654;
-    int reverse = 0;
+    // int e = 87654;
+    // int reverse = 0;
 
-    while( e !=0) {
-        int dig = e % 10;
-        reverse = reverse * 10 + dig;
-        e = e / 10;
+    // while( e !=0) {
+    //     int dig = e % 10;
+    //     reverse = reverse * 10 + dig;
+    //     e = e / 10;
+    // }
+    // System.out.println(reverse);
+
+    //Ques 13
+
+    // int r = 121;
+    // int rev = 0;
+    // int original = r;
+
+    // while(r !=0){
+
+    //     int digi = r % 10;
+    //     rev = rev * 10 + digi;
+    //     r = r / 10;
+
+    // }
+    // System.out.println(rev);
+
+    // if (original==rev) {
+    //     System.out.println("It's Palindrome");
+        
+    // } else {
+    //     System.out.println("Not a palindrome");
+        
+    // }
+
+    //Ques 14
+
+    // int sod = 248;
+    // int sodsum = 0;
+
+    // while (sod !=0) {
+       
+    //     int digit = sod % 10;
+    //     sodsum = sodsum + digit;
+    //     sod = sod / 10;
+    // }
+    // System.out.println(sodsum);
+
+    //Ques 15
+
+    // int pm = 15;
+    // boolean isPrime = true;
+
+    
+    //     for(int i = 2; i<pm; i++){
+    //      if(pm % i ==0){
+    //         isPrime = false;
+    //         break;
+
+    //      }
+
+    //      if (isPrime) {
+    //         System.out.println("Prime");
+    //      } else {
+    //         System.out.println("Not Prime");
+            
+    //      }
+    //     }
+        
+    //Ques 16
+
+    int pp = 14;
+
+    for(int pnum = 2; pnum<=pp; pnum++){
+            boolean isPrime = true;
+
+        
+        
+        for(int i = 2; i<pnum; i++){
+        
+            if (pnum%i==0) {
+                isPrime = false;
+                break;
+            
+                
+            }
+
+            
+
+
+        }
+
+         if (isPrime) {
+            
+        
+                    System.out.println(pnum);
+                
+                }
+       
+
+
     }
-    System.out.println(reverse);
+
+
+
+
+
 
 
 
