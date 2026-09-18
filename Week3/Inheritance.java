@@ -1,25 +1,53 @@
 package Week3;
 
 
-  class Animal {
-    void eat() {
-        System.out.println("Animal is eating");
+class Employee {
+
+    String name;
+    int salary;
+
+    Employee(String name, int salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    void showDetails() {
+        System.out.println("Name: " + name);
+        System.out.println("Salary: " + salary);
+    }
+
+    void work() {
+        System.out.println("Employee is working");
     }
 }
 
-class Dog extends Animal {
-    void bark() {
-        System.out.println("Dog is barking");
+class Developer extends Employee {
+
+    String programmingLanguage;
+
+    Developer(String name, int salary, String programmingLanguage) {
+        super(name, salary);
+        this.programmingLanguage = programmingLanguage;
+    }
+
+    void code() {
+        System.out.println(name + " is coding in " + programmingLanguage);
+    }
+
+    @Override
+    void work() {
+        System.out.println(name + " is developing software");
     }
 }
 
 public class Inheritance {
     public static void main(String[] args) {
 
-        Dog d = new Dog();
+        Developer d = new Developer("Wiz", 60000, "Java");
 
-        d.eat();   
-        d.bark();  
+        d.showDetails();
+        d.work();
+        d.code();
     }
-}  
+}
 
