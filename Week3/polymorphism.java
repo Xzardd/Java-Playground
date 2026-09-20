@@ -1,46 +1,50 @@
 package Week3;
 
+
+class Payment {
+
+    void pay(double amount) {
+        System.out.println("Processing payment of ₹" + amount);
+    }
+}
+
+class UPI extends Payment {
+
+    @Override
+    void pay(double amount) {
+        System.out.println("Paid ₹" + amount + " using UPI");
+    }
+}
+
+class CreditCard extends Payment {
+
+    @Override
+    void pay(double amount) {
+        System.out.println("Paid ₹" + amount + " using Credit Card");
+    }
+}
+
+class Cash extends Payment {
+
+    @Override
+    void pay(double amount) {
+        System.out.println("Paid ₹" + amount + " using Cash");
+    }
+}
+
 public class Polymorphism {
+
     public static void main(String[] args) {
 
-        Animal a1 = new Dog();
-        Animal a2 = new Cat();
+        Payment payment;
 
-        a1.sound();
-        a2.sound();
-    }}
+        payment = new UPI();
+        payment.pay(1500);
 
-    class Animal {
+        payment = new CreditCard();
+        payment.pay(2500);
 
-    void sound() {
-        System.out.println("Animal makes a sound");
+        payment = new Cash();
+        payment.pay(800);
     }
 }
-
-class Dog extends Animal {
-
-    @Override
-    void sound() {
-        System.out.println("Dog barks");
-    }
-}
-
-class Cat extends Animal {
-
-    @Override
-    void sound() {
-        System.out.println("Cat meows");
-    }
-}
-
-
-
-
-       
-    
-
-
-
-
-        
-
