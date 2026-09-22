@@ -1,27 +1,65 @@
 package Week3;
 
-abstract class Animal {
+abstract class Vehicle {
 
-    abstract void makeSound();
+    String brand;
 
-    void eat() {
-        System.out.println("Animal is eating");
+    Vehicle(String brand) {
+        this.brand = brand;
+    }
+
+    abstract void start();
+    abstract void stop();
+
+    void showBrand() {
+        System.out.println("Brand: " + brand);
     }
 }
 
-class Dog extends Animal {
+class Car extends Vehicle {
 
-    void makeSound() {
-        System.out.println("Dog says: Woof!");
+    Car(String brand) {
+        super(brand);
+    }
+
+    void start() {
+        System.out.println("Car starts with a key");
+    }
+
+    void stop() {
+        System.out.println("Car stops using brakes");
+    }
+}
+
+class Bike extends Vehicle {
+
+    Bike(String brand) {
+        super(brand);
+    }
+
+    void start() {
+        System.out.println("Bike starts with a button");
+    }
+
+    void stop() {
+        System.out.println("Bike stops using brakes");
     }
 }
 
 public class Abstraction {
     public static void main(String[] args) {
 
-        Dog d = new Dog();
+        Car car = new Car("Toyota");
+        Bike bike = new Bike("Yamaha");
 
-        d.makeSound();
-        d.eat();
+        car.showBrand();
+        car.start();
+        car.stop();
+
+        System.out.println();
+
+        bike.showBrand();
+        bike.start();
+        bike.stop();
     }
 }
