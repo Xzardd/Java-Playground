@@ -9,6 +9,8 @@ public class Encapsulation {
 
         System.out.println(ba.getBalance());
 
+        
+        
 
         
 
@@ -36,12 +38,12 @@ class BankAccount{
 
 }
 
-class Student{
+class Student1{
     String name;
     int Age;
     int rollNum;
 
-Student(String name , int age , int rollNum){
+Student1(String name , int age , int rollNum){
     this.name = name;
     this.Age = age;
     this.rollNum = rollNum;

@@ -157,37 +157,37 @@ public class PracticePPR {
         
     //Ques 16
 
-    int pp = 14;
+    // int pp = 14;
 
-    for(int pnum = 2; pnum<=pp; pnum++){
-            boolean isPrime = true;
+    // for(int pnum = 2; pnum<=pp; pnum++){
+    //         boolean isPrime = true;
 
         
         
-        for(int i = 2; i<pnum; i++){
+    //     for(int i = 2; i<pnum; i++){
         
-            if (pnum%i==0) {
-                isPrime = false;
-                break;
+    //         if (pnum%i==0) {
+    //             isPrime = false;
+    //             break;
             
                 
-            }
+    //         }
 
             
 
 
-        }
+    //     }
 
-         if (isPrime) {
+    //      if (isPrime) {
             
         
-                    System.out.println(pnum);
+    //                 System.out.println(pnum);
                 
-                }
+    //             }
        
 
 
-    }
+    // }
 
 
 
