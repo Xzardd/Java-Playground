@@ -43,6 +43,29 @@ class FuelCar extends CarX{
 }
 
 
+interface Current{
+
+    void status();
+
+    void condition();
+}
+
+
+class Review implements Current {
+
+    @Override 
+    public void status(){
+        System.out.println("Currently in service");
+
+    }
+
+    @Override 
+    public void condition(){
+        System.out.println("Poor");
+
+    }
+} 
+
 
 public class Abstraction {
     public static void main(String[] args) {
@@ -57,6 +80,9 @@ public class Abstraction {
         carX2.accelerate();
         carX2.stopping();
 
+        Review rev = new Review();
+        rev.status();
+        rev.condition();
 
 
 
