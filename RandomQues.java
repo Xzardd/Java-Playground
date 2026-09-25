@@ -1,24 +1,24 @@
-public class Practice {
+public class RandomQues {
 
     public static void main(String[] args) {
 
-        Student[] students = {
-            new Student(101, "Rahul", 78),
-            new Student(102, "Aman", 91),
-            new Student(103, "Riya", 84),
-            new Student(104, "Karan", 67)
+        StudentV[] students = {
+            new StudentV(101, "Rahul", 78),
+            new StudentV(102, "Aman", 91),
+            new StudentV(103, "Riya", 84),
+            new StudentV(104, "Karan", 67)
         };
 
         System.out.println("Student Details");
 
-        for (Student student : students) {
+        for (StudentV student : students) {
             student.displayStudent();
             System.out.println();
         }
 
-        Student highestStudent = students[0];
+        StudentV highestStudent = students[0];
 
-        for (Student student : students) {
+        for (StudentV student : students) {
             if (student.getMarks() > highestStudent.getMarks()) {
                 highestStudent = student;
             }
@@ -31,7 +31,7 @@ public class Practice {
 
         double totalMarks = 0;
 
-        for (Student student : students) {
+        for (StudentV student : students) {
             totalMarks += student.getMarks();
         }
 
@@ -40,12 +40,12 @@ public class Practice {
         System.out.println("\nAverage Marks: " + averageMarks);
 
         System.out.println();
-        Student.displayStudentCount();
+        StudentV.displayStudentCount();
     }
 }
 
 
-class Student {
+class StudentV {
 
     private int id;
     private String name;
@@ -53,7 +53,7 @@ class Student {
 
     private static int studentCount = 0;
 
-    Student(int id, String name, double marks) {
+    StudentV(int id, String name, double marks) {
         this.id = id;
         this.name = name;
         this.marks = marks;
