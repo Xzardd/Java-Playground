@@ -9,7 +9,7 @@ public class Practice {
             new Student(104, "Karan", 67)
         };
 
-        System.out.println("----- Student Details -----");
+        System.out.println("Student Details");
 
         for (Student student : students) {
             student.displayStudent();
@@ -24,7 +24,7 @@ public class Practice {
             }
         }
 
-        System.out.println("----- Highest Marks -----");
+        System.out.println("Highest Marks");
         System.out.println(
             highestStudent.getName() + " - " + highestStudent.getMarks()
         );
