@@ -1,13 +1,13 @@
 package Week4;
 
-import java.io.*;
+import java.io.*; // this * means import all io operations
 import java.util.Scanner;
 
 //Will learn in exception handling
 public class IODeepDive {
 
     public static void main(String[] args) throws IOException {
-        
+        //will learn throws later 
 
 
 //Reads only one byte
