@@ -1,56 +1,42 @@
-
-
 package Week4;
 
+// A nested class is a class written inside another class.
 class Elephant {
-    private String name;
-    private int age;
+    private String motherName;
+    private int motherAge;
 
-    Elephant(String name, int age) {
-        this.name = name;
-        this.age = age;
+    Elephant(String motherName, int motherAge) {
+        this.motherName = motherName;
+        this.motherAge = motherAge;
     }
 
+    // Cub is an inner class. Each Cub belongs to one Elephant object.
     class Cub {
-        private String name;
-        private int age;
+        private String cubName;
+        private int cubAge;
 
-        Cub(String name, int age) {
-            this.name = name;
-            this.age = age;
+        Cub(String cubName, int cubAge) {
+            this.cubName = cubName;
+            this.cubAge = cubAge;
         }
 
         void display() {
-            System.out.println("Mother Elephant: " + Elephant.this.name);
-            System.out.println("Mother Age: " + Elephant.this.age);
-            System.out.println("Cub Name: " + this.name);
-            System.out.println("Cub Age: " + this.age);
+            // The inner class can use the outer class's fields.
+            System.out.println("Mother: " + motherName);
+            System.out.println("Mother's age: " + motherAge);
+            System.out.println("Cub: " + cubName);
+            System.out.println("Cub's age: " + cubAge);
         }
-
-        void grow() {
-            age++;
-        }
-    }
-
-    void showCub(Cub cub) {
-        cub.display();
-    }
-
-    Cub createCub(String name, int age) {
-        return new Cub(name, age);
     }
 }
 
 public class NestedClass {
     public static void main(String[] args) {
-        Elephant elephant = new Elephant("Ganga", 25);
+        Elephant mother = new Elephant("Ganga", 25);
 
-        Elephant.Cub cub1 = elephant.createCub("Moti", 2);
-        Elephant.Cub cub2 = elephant.createCub("Raja", 3);
+        // Make a Cub that belongs to this particular Elephant object.
+        Elephant.Cub cub = mother.new Cub("Moti", 2);
 
-        elephant.showCub(cub1);
-        System.out.println();
-
-        elephant.showCub(cub2);
+        cub.display();
     }
 }
