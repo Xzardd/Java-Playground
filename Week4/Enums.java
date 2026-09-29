@@ -1,6 +1,6 @@
 package Week4;
 
-public class ObjClass {
+public class Enums {
     
     public static void main(String[] args) {
         
