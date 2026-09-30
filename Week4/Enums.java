@@ -1,31 +1,51 @@
 package Week4;
+import java.util.Scanner;
 
 //Enumerations 
-public class Enums {
+public class Enums{
+
+public static void main(String[] args) {
+
+
+
+    DIRECTION direction = DIRECTION.NORTH;
+    direction.move(); 
     
-    public static void main(String[] args) {
-
-        PaymentStatus status = PaymentStatus.SUCCESS;
-        System.out.println(status.name());
-
-
-    }
+}
 }
 
-    enum PaymentStatus{
+enum DIRECTION{
 
-        SUCCESS,
-        FAILED,
-        PENDING;
+    
 
-    }
+    NORTH{
+        @Override 
+        public void move(){
+            
 
-    class PaymentStatus2{
+        }
+    },
+    SOUTH{
+         @Override 
+        public void move(){
+            System.out.println("South direction");
+        }
 
-        public static final int SUCCESS = 1;
-        public static final int FAILED = 2;
-        public static final int PENDING = 3;
+    },
+    EAST{
+         @Override 
+        public void move(){
+            System.out.println("East direction");
+        }
 
-    }
-        
-  
+    },
+    WEST{
+         @Override 
+        public void move(){
+            System.out.println("West direction");
+        }
+
+    };
+
+    public abstract void move();
+}
