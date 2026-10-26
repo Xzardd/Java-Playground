@@ -1,5 +1,4 @@
 package Week4;
-import java.util.Scanner;
 
 //Enumerations 
 public class Enums{

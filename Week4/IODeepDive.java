@@ -33,6 +33,8 @@ String name = sc.nextLine();
 int age = sc.nextInt();
 double price = sc.nextDouble();
 
+sc.close();
+
 
 System.out.println(name);
 System.out.println(age);
