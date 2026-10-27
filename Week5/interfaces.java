@@ -10,6 +10,9 @@ public class interfaces {
         // System.out.println(MathVal.radius);
         // System.out.println(MathVal.pi);
 
+        C c = new C();
+        c.fun();
+
 
     }
     
@@ -65,4 +68,23 @@ public class interfaces {
 
 // }
 
+//Java Resolution Priority Rule --> class is prioritised over interface
 
+interface A{
+    default void fun(){
+        System.out.println("A Interface");
+    }
+
+}
+
+class B{
+    public void fun(){
+        System.out.println("B Class");
+    }
+
+}
+
+class C extends B implements A{
+
+
+}
