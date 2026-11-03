@@ -1,6 +1,6 @@
 package Week5;
 
-public class Diff_String {
+public class String_Methods {
 
     //Different String Methods, String Buffer And Builder
     public static void main(String[] args) {
